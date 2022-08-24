@@ -119,7 +119,7 @@ metadata:
   namespace: tekton-pipelines
 
 ---
-apiVersion: rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
   name: tekton-pipelines-controller-admin
@@ -410,5 +410,3 @@ spec:
       - configMap:
           name: config-logging
         name: config-logging
-
----
